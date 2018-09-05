@@ -23,13 +23,13 @@ public:
     {
         if (rear-front == size)
         {
-            cout<<"Queue is Full"<<endl;
+            cout<<"Queue is Full \n";
         }
         else
         {
-            cout<<"Enter the Element :"<<endl;
+            cout<<"Enter the Element : \n";
             cin>>*rear;
-            cout<<"Entered Element is "<<*rear<<endl;
+            cout<<"Entered Element is "<<*rear<<"\n";
             rear++;
         }
     }
@@ -38,11 +38,11 @@ public:
     {
         if(front==rear)
         {
-            cout<<"Queue is Empty"<<endl;
+            cout<<"Queue is Empty \n";
         }
         else
         {
-            cout<<*front<<" is Deleted"<<endl;
+            cout<<*front<<" is Deleted \n";
             front++;
         }
     }
@@ -51,14 +51,14 @@ public:
     {
         if(front==rear)
         {
-            cout<<"Queue is Empty"<<endl;
+            cout<<"Queue is Empty \n";
         }
         else
         {
-            cout<<"Queue values are "<<endl;
+            cout<<"Queue values are  \n";
             for(int *i=front;i<rear;i++)
             {
-                cout << *i << endl;
+                cout << *i << "\n";
             }
         }
     }
@@ -68,11 +68,11 @@ void main() {
     queueptr q;
     int ch=1;
     clrscr();
-    cout<<"Queue using Pointer"<<endl;
+    cout<<"Queue using Pointer \n";
     while (ch>=1 && ch<=4)
     {
-        cout<<"1.Enqueue \t 2.Dequeue \t 3.View \t 4.Exit"<<endl;
-        cout<<"Enter your Choice:"<<endl;
+        cout<<"1.Enqueue \t 2.Dequeue \t 3.View \t 4.Exit \n";
+        cout<<"Enter your Choice: \n";
         cin>>ch;
         switch (ch)
         {
