@@ -83,6 +83,8 @@ void main()
                 break;
             case 4:
                 break;
+            default:
+                cout<<"Entered wrong Option";
         }
     }
     while (ch<=3);
