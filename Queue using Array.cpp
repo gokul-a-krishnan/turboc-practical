@@ -28,11 +28,11 @@ void queuearr::enqueue()
     int x;
     if(rear==4)
     {
-        cout<<"Queue is OverFlow"<<endl;
+        cout<<"Queue is OverFlow \n";
     }
     else
     {
-        cout<<"Enter the Element:"<<endl;
+        cout<<"Enter the Element: \n";
         cin>>x;
         a[rear]=x;
         rear++;
@@ -43,11 +43,11 @@ void queuearr::dequeue()
 {
     if(front==rear)
     {
-        cout<<"Queue is Empty"<<endl;
+        cout<<"Queue is Empty \n";
     }
     else
     {
-        cout<<"Deleted element is "<<a[front]<<endl;
+        cout<<"Deleted element is "<<a[front]<<"\n";
         front++;
     }
 }
@@ -57,14 +57,14 @@ void queuearr::view()
     int i;
     if(front==rear)
     {
-        cout<<"Queue is Empty"<<endl;
+        cout<<"Queue is Empty \n";
     }
     else
     {
-        cout<<"Queue value are :"<<endl;
+        cout<<"Queue value are : \n";
         for(i=front;i<rear;i++)
         {
-            cout<<a[i]<<endl;
+            cout<<a[i]<<"\n";
         }
     }
 }
@@ -74,11 +74,11 @@ void main()
     queuearr qr;
     int ch=1;
     clrscr();
-    cout<<"Queue operation using Array"<<endl;
+    cout<<"Queue operation using Array \n";
     while (ch>=1 && ch<=4)
     {
-        cout<<"1.Enqueue \t 2.Dequeue \t 3.View \t 4.Exit"<<endl;
-        cout<<"Enter your Choice : "<<endl;
+        cout<<"1.Enqueue \t 2.Dequeue \t 3.View \t 4.Exit \n";
+        cout<<"Enter your Choice :  \n";
         cin>>ch;
         switch (ch)
         {
