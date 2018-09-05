@@ -73,7 +73,7 @@ void main()
 {
     queuearr qr;
     int ch=1;
-    clrscr());
+    clrscr();
     cout<<"Queue operation using Array"<<endl;
     while (ch>=1 && ch<=4)
     {
