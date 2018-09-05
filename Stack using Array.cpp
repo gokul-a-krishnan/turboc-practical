@@ -19,11 +19,11 @@ void stack::push()
 {
     if(top==n)
     {
-        cout<<"Stack is Full"<<endl;
+        cout<<"Stack is Full \n";
     }
     else
     {
-        cout << "Enter the Value:" << endl;
+        cout << "Enter the Value: \n";
         cin >> m;
         a[top] = m;
         top++;
@@ -35,27 +35,27 @@ void stack::pop()
     int b;
     if(top==0)
     {
-        cout<<"Stack is Empty"<<endl;
+        cout<<"Stack is Empty \n";
     }
     else
     {
         top--;
         b=a[top];
-        cout<<"The Deleted Element is "<<b<<endl;
+        cout<<"The Deleted Element is "<<b<<"\n";
     }
 }
 
 void stack::display(){
     if(top==0)
     {
-        cout<<"Stack is Empty"<<endl;
+        cout<<"Stack is Empty \n";
     }
     else
     {
-        cout<<"Elemnets in Stack are :"<<endl;
+        cout<<"Elements in Stack are : \n";
         for(int i=top-1;i>=0;i--)
         {
-            cout<<a[i]<<endl;
+            cout<<a[i]<<"\n";
         }
     }
 }
@@ -65,10 +65,10 @@ void main()
     stack ob;
     int ch;
     clrscr();
-    cout<<"Stack Operation"<<endl;
+    cout<<"Stack Operation \n";
     do
     {
-        cout<<"1.Push \t 2.Pop \t 3.View \t 4.Exit"<<endl;
+        cout<<"1.Push \t 2.Pop \t 3.View \t 4.Exit \n";
         cin>>ch;
         switch (ch)
         {
