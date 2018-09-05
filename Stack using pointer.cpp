@@ -23,13 +23,13 @@ public:
     {
         if(top-sp==size)
         {
-            cout<<"Stack is full"<<endl;
+            cout<<"Stack is full \n";
         }
         else
         {
-            cout<<"Enter the Element:"<<endl;
+            cout<<"Enter the Element: \n";
             cin>>*top;
-            cout<<"Pushed element is "<<*top<<endl;
+            cout<<"Pushed element is "<<*top<<"\n";
             top++;
         }
     }
@@ -38,12 +38,12 @@ public:
     {
         if(sp==top)
         {
-            cout<<"Stack is Empty"<<endl;
+            cout<<"Stack is Empty \n";
         }
         else
         {
             top--;
-            cout<<*top<<" is Poped"<<endl;
+            cout<<*top<<" is Poped \n";
         }
     }
 
@@ -51,14 +51,14 @@ public:
     {
         if(sp==top)
         {
-            cout<<"Stack is Empty"<<endl;
+            cout<<"Stack is Empty \n";
         }
         else
         {
-            cout<<"Stack values are:"<<endl;
+            cout<<"Stack values are: \n";
             for(int *i=sp;i<top;i++ )
             {
-                cout<<*i<<endl;
+                cout<<*i<<"\n";
             }
         }
     }
@@ -68,11 +68,11 @@ void main()
     stack s;
     int ch=1;
     clrscr();
-    cout<<"Stack Operation using Pointer"<<endl;
+    cout<<"Stack Operation using Pointer \n";
     while (ch>=1 && ch<=4)
     {
-        cout<<"1.Push \t 2.Pop \t 3.View \t 4.Exit"<<endl;
-        cout<<"Enter your Choice: "<<endl;
+        cout<<"1.Push \t 2.Pop \t 3.View \t 4.Exit \n";
+        cout<<"Enter your Choice:  \n";
         cin>>ch;
         switch (ch)
         {
